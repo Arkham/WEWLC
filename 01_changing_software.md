@@ -11,7 +11,7 @@ In each of these cases, generally the code we are touching is a small part of
 the actual code size. Therefore, we want to change some behaviour, some functionality,
 but we want to preserve so much more.
 
-*We have to figure out how to preserve existing behaviour*
+**We have to figure out how to preserve existing behaviour**
 
 Otherwise, we don't know how much of that existing behaviour is at risk when we make
 our changes.
@@ -24,7 +24,7 @@ To mitigate risks, we can ask ourselves these questions:
 
 Generally, we are very scared to touch "known-to-be-working" code
 
-*If it ain't broken, don't fix it!*
+**If it ain't broken, don't fix it!**
 
 So the answers seems to be: avoid change as much as possible.
 
