@@ -42,3 +42,11 @@ code are resolved so that we have a complete representation of the program.
 
 In this case the seams are the calls to external methods and the enabling points
 are either classpaths or environment configurations.
+
+## Object seams
+
+These are the most common seams we can see in OOP languages. What is important
+is that we need to have an enabling point where we can either dinamically inject
+a fake object or have a method we can override in our test. In this way we don't
+need to modify too much of our production code in order to setup some tests.
+
