@@ -32,3 +32,31 @@ xUnit family is composed by many frameworks, notably JUnit for Java, CppUnit and
 CppUnit for C++ or TestUnit for Ruby.
 
 ### Common features
+
+* each test should create a separate object to test, in order to maintain isolation
+* there can be a setup method to be run before each test..
+* and a teardown method to be run after each test
+
+## General Test Harnesses
+
+While xUnit style tests are more designed for unit testing, there are other
+frameworks which are more focused on testing multiple classes at once, which are
+FIT and Fitnesse.
+
+### Framework for Integrated Tests (FIT)
+
+FIT is a framework developed by Ward Cunningham. Using FIT you can describe the
+behaviour of your system and write inputs and outputs as HTML tables and FIT
+will run these tables as tests.
+
+FIT accepts HTML, runs tests defined in HTML tables and produces HTML output,
+displaying in green passed tests and in red failed tests.
+
+The powerful concept behind FIT is that it helps communication between the
+developers who write the software and the clients who need to specify what it
+should do. In theory, clients could write new tests (which won't pass) and the
+job of the developer will be to make those pass.
+
+### Fitnesse
+
+Fitnesse is basically FIT inside a wiki and was built by Robert Martin.
